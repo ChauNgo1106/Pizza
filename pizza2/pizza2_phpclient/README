@@ -1,0 +1,22 @@
+README for pizza2_phpclient
+
+This project is set up to be installed at /cs637/username/pizza2_phpclient
+relative to the document root, where username is your topcat username.
+It is designed to use webservices provided by a PHP Slim server in the 
+../pizza2_server project to access pizzadb in mysql on the same system.
+
+On topcat, this project is meant to be installed at
+/var/www/html/cs637/username/pizza2_phpclient.
+You have private access to this area using UNIX file permissions,
+just as you have private access to your ~/cs637 directory area.
+
+To be ready to run this project, you need to edit in your
+topcat username in just one place in these sources, view/header.php,
+as explained in a comment in that files.
+
+The harder part is to supply the needed pizza2_server project that
+implements the needed web services. It is expected to be available at
+/cs637/username/pizza2_server relative to the document root, i.e. at
+../pizza2_server relative to this project. The server side needs a loaded 
+mysql server.
+

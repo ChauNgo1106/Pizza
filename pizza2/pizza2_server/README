@@ -1,0 +1,21 @@
+README for pizza2_server
+
+This project is set up to be installed at /cs637/username/pizza2_server
+relative to the document root, where username is your topcat username.
+
+On topcat, this project is meant to be installed at
+/var/www/html/cs637/username/pizza2_server.
+You have private access to this area using UNIX file permissions,
+just as you have private access to your ~/cs637 directory area.
+
+To be ready to run this project, you need to edit in your
+topcat username in just one place in these sources, api/index.php,
+as explained in a comment in that file.
+
+You also need to make sure the pizza database is loaded--see
+the files in the database directory.
+
+Note that Netbeans will put a red exclamation point on the vendor directory
+because one of its modules, called pimple, doesn't validate to Netbean's
+satisfaction. That escalates to red marks on "Source Files" and the whole
+project. Don't worry about these markings.

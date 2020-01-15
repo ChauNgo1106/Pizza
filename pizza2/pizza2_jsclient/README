@@ -1,0 +1,28 @@
+Pizza Shop with JS single-page app for students
+
+Uses PHP Slim server in pizza2_server project to access pizzadb in mysql and support
+webservices used by JS via Ajax.
+The Slim server depends on the Apache webserver's URL-rewriting capability, 
+so we can't use the Netbeans internal server on its port 8383 for the server.
+Thus the baseUrl in use in app.js specifies port 80 for the server, i.e. 
+Apache of XAMPP or Apache on topcat. With the client side running on
+port 8383 and the server on 80, this counts as cross-origin resource
+sharing (CORS), so it matters that our Slim server supports that kind of access.
+
+To execute this app under Netbeans: using CORS 
+1. make sure xampp is running Apache and mysql, for the server side
+2. if first time, load mysql using files in database directory
+3. Run index.html from Netbeans
+
+To execute this app purely on XAMPP: no CORS here (only one server in use)
+1. copy this directory to \xampp\htdocs\cs637\username\pizza_jsclient 
+2. make sure xampp is running Apache and mysql
+3. if first time, load mysql using files in database directory
+4. browse to index.html (URL localhost/cs637/username/pizza2_jsclient/pizza/index.html)
+
+To execute this app on topcat: no CORS here (only one server in use)
+1. copy this directory to /var/www/html/cs637/username/pizza2_jsclient 
+2. if first time, load mysql using files in database directory
+3. browse to index.html 
+   (URL topcat.cs.umb.edu/cs637/username/pizza2_jsclient/index.html)
+

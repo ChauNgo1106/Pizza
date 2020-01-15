@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Pizza Shop</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+        <!-- needed for mobile devices -->
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <header> <img id="pizzapie" src="images/pizzapie.jpg" alt="Pizza">
+            <h1>My Pizza Shop</h1>
+            <br> <!-- does clear too -->
+        </header>
+        <main>
+            <div class="container">
+                <div class="tabs">
+                    <a href=""><span class="active">Home</span></a>
+                    <a href=""><span>Order Pizza</span></a>
+                </div>
+                <section class="tabContent active">
+                    <h1>Welcome Student!</h1>
+                    <h2>Available Sizes</h2>
+                    <ul id="sizes">
+                    </ul>
+                    <h2>Available Toppings</h2>
+                    <ul id="toppings">
+                    </ul>
+                    <form id = "userform" action="#" method="post"> 
+                        <label>Username:</label>
+                        <select id="userselect" name="user_id" 
+                                            required="required">
+                        </select>
+                        <input value="Select Your Username" type="submit"> 
+                        <br>
+                    </form>
+                    <div id="order-area">
+                        <h2>Orders in progress for 
+                            <span id="username-fillin1"></span>
+                                  <span id="ordermessage"></span></h2> 
+                        <div id = "order-info">
+                        <table id="ordertable">
+                            <!-- list baked, then preparing orders for user -->
+                        </table>
+                        <form id ="refreshbutton" action="#" method="post">                      
+                            <input value="Refresh Order List" type="submit"> 
+                        </form>
+                         </div>
+                        <!-- if there are baked pizzas this is displayed -->
+                        <form id="ackform" action="#" method="post"> 
+                            <input value="Acknowledge Delivery of Baked Pizzas"
+                                   type="submit"> </form>
+                    </div>
+                </section>
+                <!--active here to make everything show: final version should 
+                start off not active here , so order form doesn't show until requested-->
+                <section class="tabContent active">
+                    <h1>Build Your Pizza <span id="username-fillin2"></span>!!</h1>
+                    <form id="orderform" action="#" method="get">
+                        <h2>Pizza Size:</h2>
+                        <div id="order-sizes">
+                        </div>
+                        <div class="order-toppings">
+                            <h2>Toppings:</h2>
+                            <div class="tabs meat-meatless">
+                                <a href="#"><span class="active">Meat</span></a>
+                                <!--another class = active that's temporary--->
+                                <a href="#"><span class="active">Meatless</span></a>
+                            </div>
+                            <div class="tabContent active" id = "meats"> 
+                            </div>
+                             <!--another class = active that's temporary--->
+                            <div class="tabContent active" id = "meatlesses">
+                            </div> 
+                        </div>
+                        <input class="submitbutton" type="submit" 
+                               value="Order Pizza" /> <br><br>
+                    </form>
+                    <p id="order-message"></p>
+                </section>
+            </div>
+        </main>
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="javascripts/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+/* CSS from Chapter 5 project, simplified and made smartphone-legible */
+/* Main change: no <aside> for top-level links, instead a nav bar at top */
+
+/* Use padding and margin only vertically
+  Try changing padding-left to 10px to see what happens*/
+* {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+html {
+    background-color: lightsalmon;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    background-color: white;
+    border: 1px solid black;
+}
+header {
+    border-bottom: 2px solid black;
+    padding: .5em 0;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    color: darkslategrey;
+}
+#pizzapie {
+    float: left;
+    width: 150px;
+}
+main {
+}
+/* Move section content over from left edge a bit */
+section {
+    padding-left:1.0em;
+}
+
+form {
+    padding: .25em 0;
+}
+
+h1 {
+    font-size: 150%;
+    padding: .5em 0;
+}
+h2 {
+    font-size: 120%;
+    padding: .25em 0;
+}
+h1, h2 {
+    color: rgb(208, 133, 4);
+    margin: 0 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0 0;
+    padding-bottom: .5em;
+}
+
+li, label {
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+}
+
+li.horizontal {
+  display: inline;
+}
+
+br {
+    clear: left;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+td, th {
+    border: 1px dashed black;
+    font-size: 1em;
+    padding: .2em .5em .2em .5em;
+    text-align: left;
+    width: 100%;
+}
+tr {
+	border: 1px solid black;
+}
+.submitbutton {
+    font-size: 1.3rem;
+}
+/* for tab control of Home vs. Order Pizza, and topping choices in order_pizza: also see tabcontrol.js */
+.tabs a span {
+    border-radius: 5px 5px 0 0;
+    font-size: 1em;
+    display: inline-block;
+    width: 8em;
+    margin-right: 0.8em;
+    text-align: center;
+    background: #ddd;
+    padding: .5em;
+}
+.tabs a .active {
+    background: #eee;
+}
+.tabs.meat-meatless a span  {
+    background: #ccc;
+}
+.tabs.meat-meatless a .active {
+    background: #ddd;
+}
+/* tab content control */
+.tabContent {
+    margin-bottom: 1em;
+    border-radius: 0 5px 5px 5px;
+    background: #eee;
+    display: none;
+}
+
+.tabContent.active {
+    display: block;
+}
+#meats,#meatlesses{
+    background:#ddd;
+}
+/* order-area is shown only if user is known */
+#order-area {
+   display: none;
+}
+#order-area.active {
+   display: block;
+}
+/* orderinfo (table + refresh button) is shown only if user has in-progress orders */
+#order-info {
+   display: none;
+}
+#order-info.active {
+   display: block;
+}
+/* acknowledge-pizzas form is shown only if user has baked pizzas */
+#ackform {
+   display: none;
+}
+#ackform.active {
+   display: block;
+}
