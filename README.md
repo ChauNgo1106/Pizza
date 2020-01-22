@@ -1,5 +1,5 @@
 # Pizza
-This project is implemented by Chau Bao Ngo and intructed by professor Betty O'Neil (at University of Massachusetts in Boston). 
+This project is implemented by Chau Bao Ngo and instructed by professor Betty O'Neil  (at University of Massachusetts in Boston). 
 In this project, I have already implemented in Pizza1 (static pizza order web app) and Pizza2 (dynamic pizza order web app).
 
 Pizza1.
@@ -29,3 +29,17 @@ User's pizza ordered page.
 Order page. User can choose their prefered toppings and the size of the pizza.
 
 <img width="576" alt="Screen Shot 2020-01-20 at 12 31 55 PM" src="https://user-images.githubusercontent.com/59751996/72928211-93254900-3d25-11ea-8381-cbf00ab224f9.png">
+
+
+
+
+Pizza2 (Client side only for user, Admind side will be treated as server side)
+
+Pizza ordered page
+<img width="724" alt="Screen Shot 2020-01-20 at 12 33 11 PM" src="https://user-images.githubusercontent.com/59751996/72928646-5c036780-3d26-11ea-89fe-e32042a05b8f.png">
+
+Display the order of chosen user
+<img width="1440" alt="Screen Shot 2020-01-20 at 12 33 57 PM" src="https://user-images.githubusercontent.com/59751996/72928658-5e65c180-3d26-11ea-8d6d-40fc3691b352.png">
+
+Order page with toppings, sizes availability. 
+<img width="552" alt="Screen Shot 2020-01-20 at 12 34 06 PM" src="https://user-images.githubusercontent.com/59751996/72928662-602f8500-3d26-11ea-9821-8d3f32ecf078.png">
