@@ -35,11 +35,14 @@ Order page. User can choose their prefered toppings and the size of the pizza.
 
 Pizza2 (Client side only for user, Admind side will be treated as server side)
 
-Pizza ordered page
+Pizza ordered page.
+
 <img width="724" alt="Screen Shot 2020-01-20 at 12 33 11 PM" src="https://user-images.githubusercontent.com/59751996/72928646-5c036780-3d26-11ea-89fe-e32042a05b8f.png">
 
-Display the order of chosen user
+Display the order of chosen user.
+
 <img width="1440" alt="Screen Shot 2020-01-20 at 12 33 57 PM" src="https://user-images.githubusercontent.com/59751996/72928658-5e65c180-3d26-11ea-8d6d-40fc3691b352.png">
 
-Order page with toppings, sizes availability. 
+Order page with toppings, sizes availability.
+
 <img width="552" alt="Screen Shot 2020-01-20 at 12 34 06 PM" src="https://user-images.githubusercontent.com/59751996/72928662-602f8500-3d26-11ea-9821-8d3f32ecf078.png">
